@@ -126,7 +126,7 @@
         pet.hunger = Math.max(0, pet.hunger - getRandomValue(5, 15));
         pet.happiness += 5;
         pet.energy += 3;
-        showImage("eat.gif", 2000); // Show image for 2 seconds
+        showImage("eat.gif", 3000); // Show image for 3 seconds
         // Trigger the poo action after feeding
         setTimeout(() => {
           poo();
@@ -136,22 +136,22 @@
       function play() {
         pet.happiness = Math.max(0, pet.happiness - getRandomValue(5, 15));
         pet.energy -= 5;
-        showImage("play.gif", 2000); // Show image for 2 seconds
+        showImage("play.gif", 3000); // Show image for 3 seconds
       }
 
       function sleep() {
         pet.energy = Math.min(100, pet.energy + getRandomValue(10, 20));
-        showImage("sleepy.gif", 2000); // Show image for 2 seconds
+        showImage("sleepy.gif", 3000); // Show image for 3 seconds
       }
 
       function poo() {
         pet.hasPoo = true;
         showImage("poop.gif", 3000); // Show cleaning image for 3 seconds
         setTimeout(() => {
-          showImage("clean.gif", 2000); // Show cleaning image for 2 seconds
+          showImage("clean.gif", 3000); // Show cleaning image for 3 seconds
           setTimeout(() => {
             cleanPoo();
-          }, 2000);
+          }, 3000);
         }, 3000);
       }
 
