@@ -15,16 +15,33 @@
         font-family: "So Extended", sans-serif;
         text-align: center;
         font-size: 25px;
-        background-color: lightpink;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
       }
 
       h1 {
         font-family: "seriousr2b", sans-serif;
 
         font-size: 100px;
-        padding: 25px;
-        background-color: rgb(250, 206, 232);
-        margin: -10px;
+       color:rgb(158, 206, 197, 0.8);
+        background-color: rgba(0, 0, 0, 0.4);
+        margin: 20px;
+        box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+        text-shadow: 4px 4px 12px rgba(248, 217, 78, 0.699);
+      }
+
+      .main {
+        margin: auto;
+        display: block;
+       padding-top: 20px;
+       margin-top: 20px;
+        border-radius: 8px;
+background-color: rgb(235, 235, 235, 0.7);
+width: 900px;
+ box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+
+
       }
 
       .row-2 {
@@ -39,30 +56,147 @@
         margin: 10px;
       }
       a {
-        color: mediumvioletred;
+        color: rgb(247, 169, 218);
       }
       button {
         margin: 10px;
         padding: 10px;
         font-size: 16px;
         cursor: pointer;
-        border: 3px dotted;
+        border:2px solid;
+        border-color: rgb(96, 97, 97);
         border-radius: 6px;
-        font-family: "So Extended", sans-serif;
+        color:rgb(115, 117, 117);
+        font-family: "seriousr2b", sans-serif;
         font-size: 30px;
+         background: linear-gradient(
+      0deg,
+      rgb(245, 245, 245) 0%,
+      rgba(214, 198, 213, 0.938) 100%
+    );
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+
+
+      }
+
+      button:hover {
+      
+transform:scale(120%);
+      transition: transform 330ms ease-in-out;
+
       }
 
       .check {
         text-align: center;
         margin: auto;
         display: block;
+          background: linear-gradient(
+      0deg,
+      rgb(245, 245, 245) 0%,
+      rgba(228, 175, 168, 0.938) 100%
+    );
+    color:rgb(170, 96, 119);
       }
+
+      .codeichi-img {
+border-radius: 12px;
+        background-image: url("https://thenoxwitch.neocities.org/backdrop.png");
+        background-size:contain;
+         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.4);
+      }
+
+     
+
+        .footer {
+color:aliceblue;
+font-size: medium;
+padding: 10px;
+display: block;
+margin: auto;
+background-color: rgba(0, 0, 0, 0.4);
+      
+width: 900px;
+border-radius: 8px;
+  }
+      
+
+    
+
+      @media (max-width: 900px) {
+   body {
+        font-family: "So Extended", sans-serif;
+        text-align: center;
+        font-size: 25px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+      }
+
+  
+
+  h1 {
+
+    font-size: 30px;
+    border-radius: 8px;
+  }
+
+
+
+    .main {
+        margin: auto;
+        display: block;
+       padding-top: 20px;
+       margin-top: 20px;
+        border-radius: 0px;
+background-color: rgb(235, 235, 235, 0.7);
+width: 100%;
+ box-shadow: none;
+
+
+      }
+
+  .codeichi-img {
+    width: 300px;
+  }
+
+  button {
+width: 100px;
+font-size: 20px;
+
+  }
+
+  .check {
+
+    width: 200px;
+  }
+
+        .footer {
+color:aliceblue;
+font-size: medium;
+padding: 10px;
+display: block;
+margin: auto;
+background-color: rgba(0, 0, 0, 0.4);
+      
+max-width: 80%;
+border-radius: 8px;
+  }
+      
+
+ 
+  }
+
+
+  
+
     </style>
     <title>Codeichi Vpet</title>
   </head>
   <body>
     <h1>Codeichi</h1>
-
+    
+<div class="container-fluid main">
     <div class="row-2">
       <div class="col">
         <div id="pet">
@@ -78,12 +212,16 @@
     </div>
 
     <button class="check" onclick="checkStatus()">Check Status</button><br />
+</div>
 
     <div class="footer">
       <a href="https://github.com/thenoxwitch/Codeichi-Simple-VirtualPet"
         >Open Source Code </a
       >by Atenas G I
     </div>
+  
+
+   
 
     <script>
       var pet = {
